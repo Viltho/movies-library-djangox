@@ -32,7 +32,8 @@
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="{% url 'home' %}" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="{% url 'about' %}" class="nav-link px-2 link-dark">About</a></li>
+          <li><a href="{% url 'about_page' %}" class="nav-link px-2 link-dark">About</a></li>
+          <li><a href="{% url 'movies_list' %}" class="nav-link px-2 link-dark">Movies</a></li>
         </ul>
 
         <div class="dropdown text-end">
@@ -59,15 +60,16 @@
     </div>
   </header>
 
-  <div class="container">
-    {% block content %}
-    <p>Default content...</p>
-    {% endblock content %}
-  </div>
+  <body>
+    <div>
+      {% block content %}
+      {% endblock content %}
+    </div>
+  </body>
 
   <footer class="footer">
     <div class="container">
-      <span class="text-muted">Footer...</span>
+      <span class="text-muted">&copy; Viltho copyrights reserved.</span>
     </div>
   </footer>
 
