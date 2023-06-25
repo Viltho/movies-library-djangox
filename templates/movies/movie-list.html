@@ -4,7 +4,7 @@
 
 <a href="{% url 'movies_create' %}">+ New Movie</a>
 <ul>
-  {% for movie in movies_list %}
+  {% for movie in movies %}
   <li>
     <a href="{% url 'movies_detail' movie.pk %}">{{ movie.title }}</a>
   </li>

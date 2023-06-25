@@ -11,7 +11,7 @@ class AboutPageView(TemplateView):
 class MovieListView(ListView):
     template_name = 'movies/movie-list.html'
     model = Movies
-    context_object_name = 'movie'
+    context_object_name = 'movies'
 
 class MovieDetailView(DetailView):
     template_name = 'movies/movie-details.html'
